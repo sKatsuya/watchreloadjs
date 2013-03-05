@@ -1,0 +1,11 @@
+{
+  "name": "watchreload.js",
+  "description": "reloading application",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "socket.io": "*",
+    "opts": "*",
+    "walk": "*"
+  }
+}

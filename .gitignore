@@ -1,0 +1,7 @@
+*.DS_Store
+node_modules
+
+node.sh
+watchmedo.sh
+
+npm-debug.log

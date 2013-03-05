@@ -1,0 +1,3 @@
+#!/bin/sh
+
+node server.js -h your.host.com -f ./index.html
