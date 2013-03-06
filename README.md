@@ -18,7 +18,7 @@ This application returns contents which includes reloading script when specified
 
 ### Install:
 
-$ node install
+$ npm install
 
 ### Usage:
 
