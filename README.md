@@ -22,7 +22,7 @@ $ npm install
 
 ### Usage:
 
-$ node server.js -h <your host> -f <response file>
+$ node server.js -h &lt;your host&gt; -f &lt;response file&gt;
 
 or
 
