@@ -33,7 +33,7 @@ $ sh ./process.sh, if you prepair node.sh witch includes above shell script.
 * -h host (require): specifies host that provides socket.io.
 * -f file (require): specifies response html file path.
 * -b base path: specifies responese html's base path. If no specifies, this is to be host value.
-* -d watch dir: specifies dir that is watched. If no specifies, this is tobe "./".
+* -d watch dir: specifies dir that is watched. If no specifies, this is to be "./".
 
 ### Acknowledgement
 
