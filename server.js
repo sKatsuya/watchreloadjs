@@ -13,7 +13,7 @@ opts.parse([
   {
     "short": "f",
     "long": "file",
-    "description": "response file",
+    "description": "response file witch this app returns",
     "value": true,
     "required": true
   },
@@ -47,10 +47,13 @@ var dir = opts.get('dir');
 if (basePath == undefined) {
   basePath = "./";
 }
-console.log("file: "+file);
-console.log("host: "+host);
-console.log("base path: "+basePath);
-console.log("watch dir: "+dir);
+if (dir == undefined) {
+  dir = "./";
+}
+console.log(">>> file: "+file);
+console.log(">>> host: "+host);
+console.log(">>> base path: "+basePath);
+console.log(">>> watch dir: "+dir);
 
 // port
 app.listen(8080);
@@ -76,12 +79,12 @@ function handler (req, res) {
     res.end(script + data);
   });
 }
-
+/*
 io.set('transports', [
   "websocket",
   'xhr-polling'
 ]);
-
+*/
 io.sockets.on('connection', function (socket) {
 });
 
@@ -120,6 +123,7 @@ walker.on("errors", function (root, nodeStatsArray, next) {
 });
 
 walker.on("end", function () {
-  console.log("all done");
+  console.log(">>> all done");
+  console.log(">>> Please access http://" + host + ":8080");
 });
 
